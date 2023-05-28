@@ -1,7 +1,7 @@
 from aiogram import Bot, Dispatcher, executor, types
 
 
-bot = Bot('5742777204:AAH8RflW8JFx43DFqK54Spl2xx3JBe5_ViI')
+bot = Bot('')
 dp = Dispatcher(bot)
 
 
@@ -32,7 +32,7 @@ async def start(message: types.Message):
 @dp.message_handler(commands=['inline'])
 async def info(message: types.Message):
     markup = types.InlineKeyboardMarkup()
-    markup.add(types.InlineKeyboardButton('Site', url='https://fotostrana.ru/superanton/'))
+    markup.add(types.InlineKeyboardButton('Site', url=''))
     markup.add(types.InlineKeyboardButton('Hello', callback_data='hello'))
     await message.reply('Hello', reply_markup=markup)
 
