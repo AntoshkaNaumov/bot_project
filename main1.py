@@ -6,11 +6,11 @@ import sqlite3
 import requests
 import json
 
-bot = telebot.TeleBot('5608147379:AAH8tl9rt1CdxlKwH9nRemLzaqj0HT7Gi3c')
+bot = telebot.TeleBot('')
 currency = CurrencyConverter()
 name = None
 amount = 0
-API = '0889d09733553d0ae6817ee47a091c9e'
+API = ''
 
 
 @bot.message_handler(commands=['start'])
